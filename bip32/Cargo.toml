@@ -1,0 +1,20 @@
+[package]
+name = "bip32"
+version = "0.1.0"
+authors = ["Gregory Hill <gregorydhill@outlook.com>"]
+edition = "2018"
+
+[dependencies]
+libsecp256k1 = { version = "0.3.5", default-features = false }
+sha2 = { version = "0.8", default-features = false }
+hmac = { version = "0.7", default-features = false }
+bs58 = { version = "0.4.0", features = ["check"], default-features = false }
+ripemd160 = { version = "0.8", default-features = false }
+
+[features]
+default = ["std"]
+std = [
+    "libsecp256k1/std",
+    "sha2/std",
+    "bs58/std",
+]

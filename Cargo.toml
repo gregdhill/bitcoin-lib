@@ -1,0 +1,5 @@
+[workspace]
+members = [
+  "bip32",
+  "bip47",
+]
